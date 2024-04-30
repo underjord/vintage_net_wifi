@@ -70,7 +70,8 @@ defmodule VintageNetWiFi do
   alias VintageNetWiFi.AccessPoint
   alias VintageNetWiFi.Cookbook
   alias VintageNetWiFi.WPA2
-  alias VintageNetWiFi.WPASupplicant
+  alias VintageNetSupplicant.WPASupplicant
+
 
   require Logger
 
@@ -376,6 +377,7 @@ defmodule VintageNetWiFi do
     wpa_supplicant_options = [
       wpa_supplicant: "wpa_supplicant",
       ifname: ifname,
+      driver: "nl80211,wext",
       wpa_supplicant_conf_path: wpa_supplicant_conf_path,
       control_path: control_interface_dir,
       ap_mode: ap_mode,
