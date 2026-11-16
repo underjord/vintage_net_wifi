@@ -466,7 +466,7 @@ Access points are identified by their BSSID. Information about an access point
 has the following form:
 
 ```elixir
-%VintageNetWiFi.AccessPoint{
+%VintageNetSupplicant.AccessPoint{
   band: :wifi_5_ghz,
   bssid: "8a:8a:20:88:7a:50",
   channel: 149,
@@ -481,7 +481,7 @@ has the following form:
 Mesh peers are identified by their BSSID. Information about a peer has the following form:
 
 ```elixir
-%VintageNetWiFi.MeshPeer{
+%VintageNetSupplicant.MeshPeer{
   active_path_selection_metric_id: 1,
   active_path_selection_protocol_id: 1,
   age: 2339,
@@ -540,7 +540,7 @@ VintageNet.ioctl("wlan0", :signal_poll)
 Example output:
 
 ```elixir
-{:ok, %VintageNetWiFi.SignalInfo{
+{:ok, %VintageNetSupplicant.SignalInfo{
   center_frequency1: 2462,
   center_frequency2: 0,
   frequency: 2472,

@@ -85,11 +85,11 @@ defmodule VintageNetWiFi do
   alias VintageNet.IP.DhcpdConfig
   alias VintageNet.IP.DnsdConfig
   alias VintageNet.IP.IPv4Config
-  alias VintageNetWiFi.AccessPoint
+  alias VintageNetSupplicant.AccessPoint
+  alias VintageNetSupplicant.WPASupplicant
   alias VintageNetWiFi.Cookbook
   alias VintageNetWiFi.MacAddress
   alias VintageNetWiFi.WPA2
-  alias VintageNetWiFi.WPASupplicant
 
   require Logger
 
@@ -435,14 +435,15 @@ defmodule VintageNetWiFi do
        )}
     ]
 
-    wpa_supplicant_options = [
-      wpa_supplicant: "wpa_supplicant",
-      ifname: ifname,
-      wpa_supplicant_conf_path: wpa_supplicant_conf_path,
-      control_path: control_interface_dir,
-      ap_mode: ap_mode,
-      verbose: verbose
-    ]
+    wpa_supplicant_options =
+      [
+        wpa_supplicant: "wpa_supplicant",
+        ifname: ifname,
+        wpa_supplicant_conf_path: wpa_supplicant_conf_path,
+        control_path: control_interface_dir,
+        ap_mode: ap_mode,
+        verbose: verbose
+      ] ++ force_ap_scan_options(ap_mode)
 
     %RawConfig{
       ifname: ifname,
@@ -479,6 +480,13 @@ defmodule VintageNetWiFi do
     do: {:run_ignore_errors, tx_power_path(), [ifname | tx_power_args(setting)]}
 
   defp tx_power_path(), do: Application.app_dir(:vintage_net_wifi, ["priv", "tx_power"])
+
+  # Scans need to be forced in AP mode. See c_src/force_ap_scan.c.
+  defp force_ap_scan_options(true) do
+    [force_ap_scan: Application.app_dir(:vintage_net_wifi, ["priv", "force_ap_scan"])]
+  end
+
+  defp force_ap_scan_options(false), do: []
 
   defp tx_power_args(:auto), do: ["auto"]
 

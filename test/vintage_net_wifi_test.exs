@@ -182,7 +182,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -224,7 +224,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -379,7 +379,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -440,7 +440,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -525,7 +525,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -625,7 +625,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -684,7 +684,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -737,7 +737,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -783,7 +783,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -835,7 +835,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -899,7 +899,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -965,7 +965,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -1033,7 +1033,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -1104,7 +1104,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -1175,7 +1175,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -1248,7 +1248,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -1319,7 +1319,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -1392,7 +1392,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -1454,7 +1454,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -1519,7 +1519,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -1588,7 +1588,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -1655,7 +1655,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -1718,7 +1718,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -1775,14 +1775,15 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
            wpa_supplicant_conf_path: "/tmp/vintage_net/wpa_supplicant.conf.wlan0",
            control_path: "/tmp/vintage_net/wpa_supplicant",
            ap_mode: true,
-           verbose: false
+           verbose: false,
+           force_ap_scan: Application.app_dir(:vintage_net_wifi, ["priv", "force_ap_scan"])
          ]}
       ],
       restart_strategy: :rest_for_one,
@@ -1850,7 +1851,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -1923,7 +1924,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -2020,14 +2021,15 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
            wpa_supplicant_conf_path: "/tmp/vintage_net/wpa_supplicant.conf.wlan0",
            control_path: "/tmp/vintage_net/wpa_supplicant",
            ap_mode: true,
-           verbose: false
+           verbose: false,
+           force_ap_scan: Application.app_dir(:vintage_net_wifi, ["priv", "force_ap_scan"])
          ]},
         {VintageNet.Connectivity.LANChecker, "wlan0"},
         udhcpd_child_spec("wlan0")
@@ -2125,14 +2127,15 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
            wpa_supplicant_conf_path: "/tmp/vintage_net/wpa_supplicant.conf.wlan0",
            control_path: "/tmp/vintage_net/wpa_supplicant",
            ap_mode: true,
-           verbose: false
+           verbose: false,
+           force_ap_scan: Application.app_dir(:vintage_net_wifi, ["priv", "force_ap_scan"])
          ]},
         {VintageNet.Connectivity.LANChecker, "wlan0"}
       ],
@@ -2206,7 +2209,7 @@ defmodule VintageNetWiFiTest do
              %RawConfig{
                child_specs: [
                  {
-                   VintageNetWiFi.WPASupplicant,
+                   VintageNetSupplicant.WPASupplicant,
                    [
                      wpa_supplicant: "wpa_supplicant",
                      ifname: "mesh0",
@@ -2277,7 +2280,7 @@ defmodule VintageNetWiFiTest do
              %RawConfig{
                child_specs: [
                  {
-                   VintageNetWiFi.WPASupplicant,
+                   VintageNetSupplicant.WPASupplicant,
                    [
                      wpa_supplicant: "wpa_supplicant",
                      ifname: "mesh0",
@@ -2354,7 +2357,7 @@ defmodule VintageNetWiFiTest do
              %RawConfig{
                child_specs: [
                  {
-                   VintageNetWiFi.WPASupplicant,
+                   VintageNetSupplicant.WPASupplicant,
                    [
                      wpa_supplicant: "wpa_supplicant",
                      ifname: "wlan0",
@@ -2423,7 +2426,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -2488,7 +2491,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -2549,7 +2552,7 @@ defmodule VintageNetWiFiTest do
       source_config: VintageNetWiFi.normalize(input),
       required_ifnames: ["wlan0"],
       child_specs: [
-        {VintageNetWiFi.WPASupplicant,
+        {VintageNetSupplicant.WPASupplicant,
          [
            wpa_supplicant: "wpa_supplicant",
            ifname: "wlan0",
@@ -2589,7 +2592,7 @@ defmodule VintageNetWiFiTest do
 
   test "Summarize access_point list: When duplicate access points exist, keep the one with a stronger signal percent" do
     input = [
-      %VintageNetWiFi.AccessPoint{
+      %VintageNetSupplicant.AccessPoint{
         bssid: "02:cb:7a:04:e9:52",
         frequency: 5220,
         band: :wifi_5_ghz,
@@ -2599,7 +2602,7 @@ defmodule VintageNetWiFiTest do
         flags: [:ess],
         ssid: "xfinitywifi"
       },
-      %VintageNetWiFi.AccessPoint{
+      %VintageNetSupplicant.AccessPoint{
         bssid: "02:cb:7a:04:e9:54",
         frequency: 5220,
         band: :wifi_5_ghz,
@@ -2609,7 +2612,7 @@ defmodule VintageNetWiFiTest do
         flags: [:wpa2_eap_ccmp, :wpa2, :eap, :ccmp, :ess, :hs20],
         ssid: "anotherWifi"
       },
-      %VintageNetWiFi.AccessPoint{
+      %VintageNetSupplicant.AccessPoint{
         bssid: "0e:51:a4:b2:e2:a1",
         frequency: 5180,
         band: :wifi_5_ghz,
@@ -2622,7 +2625,7 @@ defmodule VintageNetWiFiTest do
     ]
 
     expected_output = [
-      %VintageNetWiFi.AccessPoint{
+      %VintageNetSupplicant.AccessPoint{
         ssid: "xfinitywifi",
         band: :wifi_5_ghz,
         bssid: "02:cb:7a:04:e9:52",
@@ -2632,7 +2635,7 @@ defmodule VintageNetWiFiTest do
         signal_dbm: -57,
         signal_percent: 90
       },
-      %VintageNetWiFi.AccessPoint{
+      %VintageNetSupplicant.AccessPoint{
         ssid: "anotherWifi",
         band: :wifi_5_ghz,
         bssid: "02:cb:7a:04:e9:54",
@@ -2649,7 +2652,7 @@ defmodule VintageNetWiFiTest do
 
   test "Summarize access_point list: SSIDs that contain null characters are removed" do
     input = [
-      %VintageNetWiFi.AccessPoint{
+      %VintageNetSupplicant.AccessPoint{
         bssid: "02:cb:7a:04:e9:52",
         frequency: 5220,
         band: :wifi_5_ghz,
@@ -2659,7 +2662,7 @@ defmodule VintageNetWiFiTest do
         flags: [:ess],
         ssid: "hidden\0"
       },
-      %VintageNetWiFi.AccessPoint{
+      %VintageNetSupplicant.AccessPoint{
         bssid: "02:cb:7a:04:e9:54",
         frequency: 5220,
         band: :wifi_5_ghz,
@@ -2669,7 +2672,7 @@ defmodule VintageNetWiFiTest do
         flags: [:wpa2_eap_ccmp, :wpa2, :eap, :ccmp, :ess, :hs20],
         ssid: "\0\0\0"
       },
-      %VintageNetWiFi.AccessPoint{
+      %VintageNetSupplicant.AccessPoint{
         bssid: "0e:51:a4:b2:e2:a1",
         frequency: 5180,
         band: :wifi_5_ghz,
@@ -2682,7 +2685,7 @@ defmodule VintageNetWiFiTest do
     ]
 
     expected_output = [
-      %VintageNetWiFi.AccessPoint{
+      %VintageNetSupplicant.AccessPoint{
         bssid: "0e:51:a4:b2:e2:a1",
         frequency: 5180,
         band: :wifi_5_ghz,
