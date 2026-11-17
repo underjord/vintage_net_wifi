@@ -142,6 +142,10 @@ The `:vintage_net_wifi` key has the following common fields:
   * 2: use random MAC, but maintain OUI
 * `:preassoc_mac_addr` - Global pre-association MAC address policy. Same
   options as `:mac_addr`
+* `:pkcs11_engine_path`, `:pkcs11_module_path` - Paths to the OpenSSL PKCS #11
+  engine and the PKCS #11 module to use when a network's `:private_key` is a
+  PKCS #11 URI for a key in an HSM. `wpa_supplicant` is a separate OS process,
+  so an engine that's loaded in the Erlang VM isn't available to it.
 * `:networks` - A list of Wi-Fi networks to configure. In client mode,
   VintageNet connects to the first available network in the list. In host mode,
   the list should have one entry with SSID and password information.
@@ -180,6 +184,8 @@ The `:vintage_net_wifi` key has the following common fields:
   * `:mac_addr` - MAC address policy (0-3). `0` - use permanent MAC address,
     `1` - use random MAC. `2` - use random MAC, but maintain OUI, `3` use `:mac_value`
   * `:mac_value` - either a MAC address string or an MFArgs
+  * `:domain_suffix_match` - For EAP networks, require the authentication
+    server's certificate to have this domain name or a subdomain of it
 
 These keys fairly directly map to the keys in the [official
 docs](https://w1.fi/cgit/hostap/plain/wpa_supplicant/wpa_supplicant.conf).
