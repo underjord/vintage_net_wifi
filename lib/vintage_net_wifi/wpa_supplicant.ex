@@ -19,7 +19,7 @@ defmodule VintageNetWiFi.WPASupplicant do
 
   alias VintageNet.Interface.EAPStatus
   alias VintageNetSupplicant.{Daemon, EAP, WPASupplicantDecoder, WPASupplicantLL}
-  alias VintageNetWiFi.BSSIDRequester
+  alias VintageNetWiFi.{BSSIDRequester, WPSData}
   require Logger
 
   @doc """
@@ -421,8 +421,8 @@ defmodule VintageNetWiFi.WPASupplicant do
     state
   end
 
-  defp handle_notification({:event, "WPS-CRED-RECEIVED", msg}, state) do
-    update_wps_credentials(state.ifname, msg)
+  defp handle_notification({:event, "WPS-CRED-RECEIVED", hex_string}, state) do
+    update_wps_credentials(state.ifname, WPSData.decode(hex_string))
     state
   end
 
