@@ -5,6 +5,14 @@
 
 # Changelog
 
+## Unreleased
+
+* Changes
+  * Move the `wpa_supplicant` plumbing to `vintage_net_supplicant` so that
+    `vintage_net_ethernet` can use it too.
+  * Backwards incompatible: `VintageNetWiFi.WPASupplicantLL` is now
+    `VintageNetSupplicant.WPASupplicantLL`. Its notifications use the new name.
+
 ## v0.12.12 - 2026-10-13
 
 * Changes
